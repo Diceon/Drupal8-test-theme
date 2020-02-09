@@ -1,0 +1,23 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+
+custom-styling:
+  version: VERSION
+  css:
+    theme:
+      css/custom.css: {}
+  js:
+    js/custom.js: {}
+
+bootstrap_cdn:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    //stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js: {}
+  css:
+    component:
+      //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}

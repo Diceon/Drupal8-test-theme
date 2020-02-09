@@ -1,0 +1,25 @@
+{% if page.header %}
+  <header class="container">HEADER
+    {{ page.header }}
+  </header>
+{% endif %}
+
+<main class="container">MAIN
+  <div class="row">
+    {% if page.sidebar_first %}
+      {{ attach_library('my_custom_theme/custom-styling') }}
+      <aside class="col-4">SIDEBAR_FIRST
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+    <section class="{{ page.sidebar_first ? ' col-8' : ' col-12' }}">CONTENT
+      {{ page.content }}
+    </section>
+  </div>
+</main>
+
+{% if page.footer_first %}
+  <footer class="container">FOOTER_FIRST
+    {{ page.footer_first }}
+  </footer>
+{% endif %}
